@@ -11,7 +11,7 @@ https://github.com/kaldi-asr/kaldi/blob/master/INSTALL
 4. Run the following script and you will see results on the screen.
 
 ```
-./run_np2.sh 
+./run.sh 
 ```
 ```
 online2-wav-nnet3-latgen-faster-force --do-endpointing=true --frames-per-chunk=20 --extra-left-context-initial=0 --online=true --frame-subsampling-factor=3 --config=/media/kwon/DISK2/DEV/kaldi/egs/force_decode/s1/new_lm_mix/conf/online.conf --min-active=200 --max-active=6000 --beam=11 --lattice-beam=6.0 --acoustic-scale=1.0 --word-symbol-table=/media/kwon/DISK2/DEV/kaldi/egs/force_decode/s1/new_lm_mix/graph/words.txt /media/kwon/DISK2/DEV/kaldi/egs/force_decode/s1/new_lm_mix/final.mdl /media/kwon/DISK2/DEV/kaldi/egs/force_decode/s1/new_lm_mix/graph/HCLG.fst /media/kwon/DISK2/DEV/kaldi/egs/force_decode/s1/wav.scp /media/kwon/DISK2/DEV/kaldi/egs/force_decode/s1/post2.txt 'WOULD YOU LIKE CHICKEN OR BEEF' 
