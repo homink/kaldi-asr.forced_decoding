@@ -87,14 +87,16 @@ class ArcPosteriorComputer {
         if (word_syms != NULL) {
           std::string word_str = word_syms->Find(word);
           if (word_str != "") {
-            os << state_times_[state] << '\t' << num_frames  << '\t' << arc_post << '\t' << word_str;
+            //os << state_times_[state] << '\t' << num_frames  << '\t' << arc_post << '\t' << word_str;
+            os << state << '\t' << arc.nextstate << '\t' << arc_post << '\t' << word_str;
             for (int32 i=0;i <split_trans.size();i++ ) {
               if (word_str == split_trans[i]) {
                 if (arc_post > post[i]) post[i]=arc_post;
               }
             }
           }
-          else os << state_times_[state] << '\t' << num_frames  << '\t' << arc_post << '\t' << word;
+          //else os << state_times_[state] << '\t' << num_frames  << '\t' << arc_post << '\t' << word;
+          else os << state << '\t' << arc.nextstate << '\t' << arc_post << '\t' << word_str;
         }
 
         os << std::endl;
