@@ -50,4 +50,4 @@ BEEF    0.4251899
 0.7559231
 ```
 
-The decoding process can be traceable in the [log file](https://github.com/homink/kaldi-asr.forced_decoding/blob/master/decoding.log) and in [the code lines](https://github.com/homink/kaldi-asr.forced_decoding/blob/master/kaldi_nnet3_online_decoding.pdf). More details are described in [here](http://homepages.inf.ed.ac.uk/aghoshal/pubs/icassp12-lattices.pdf).
+The decoding process can be traceable in the [log file](https://github.com/homink/kaldi-asr.forced_decoding/blob/master/decoding.log) and in [the code lines](https://github.com/homink/kaldi-asr.forced_decoding/blob/master/kaldi_nnet3_online_decoding.pdf). [Daniel's paper](http://homepages.inf.ed.ac.uk/aghoshal/pubs/icassp12-lattices.pdf) describes more details in an academic view.
