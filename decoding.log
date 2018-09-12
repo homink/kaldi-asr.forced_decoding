@@ -1,0 +1,521 @@
+online2-wav-nnet3-latgen-faster-force --verbose=0 --do-endpointing=true --frames-per-chunk=20 --extra-left-context-initial=0 --online=true --frame-subsampling-factor=3 --config=/media/kwon/DISK2/DEV/kaldi/egs/force_decode/s1/new_lm_mix/conf/online.conf --min-active=200 --max-active=6000 --beam=11 --lattice-beam=6.0 --acoustic-scale=1.0 --word-symbol-table=/media/kwon/DISK2/DEV/kaldi/egs/force_decode/s1/new_lm_mix/graph/words.txt /media/kwon/DISK2/DEV/kaldi/egs/force_decode/s1/new_lm_mix/final.mdl /media/kwon/DISK2/DEV/kaldi/egs/force_decode/s1/new_lm_mix/graph/HCLG.fst /media/kwon/DISK2/DEV/kaldi/egs/force_decode/s1/wav.scp /media/kwon/DISK2/DEV/kaldi/egs/force_decode/s1/result.txt 'WOULD YOU LIKE CHICKEN OR BEEF' 
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ComputeDerivedVars():ivector-extractor.cc:183) Computing derived variables for iVector extractor
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ComputeDerivedVars():ivector-extractor.cc:204) Done.
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:RemoveSomeNodes():nnet-nnet.cc:916) Removed 2 orphan nodes.
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:RemoveOrphanComponents():nnet-nnet.cc:841) Removing 2 orphan components.
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:Collapse():nnet-utils.cc:770) Added 1 components, removed 2
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:CompileLooped():nnet-compile-looped.cc:336) Spent 0.175202 seconds in looped compilation.
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:Init():decodable-simple-looped.cc:88)DecodableNnetSimpleLoopedInfo::Init
+wav-copy scp,p:/media/kwon/DISK2/DEV/kaldi/egs/force_decode/s1/wav.scp ark:- 
+extend-wav-with-silence ark:- ark:- 
+LOG (wav-copy[5.2.107~15-e8928]:main():wav-copy.cc:68) Copied 1 wave files
+LOG (extend-wav-with-silence[5.2.107~15-e8928]:main():extend-wav-with-silence.cc:107) Successfully extended 1 files.
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:PruneActiveTokens():lattice-faster-online-decoder.cc:757)PruneActiveTokens: pruned tokens from 1 to 1
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:916)PruneActiveTokens processed
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 1 is 1
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff inf
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:211)output.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:227)current_log_post_.NumRows(): 7current_log_post_.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1 states, 0 states are cut-off, arc cost calculation 374 times, FindOrAddToken new_tok added 343 times, FindOrAddToken tok updated 21 times, ForwardLink processed 374 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[0].toks tot_cost: 0
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 2 is 792
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 8.94492
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 792 states, 591 states are cut-off, arc cost calculation 6571 times, FindOrAddToken new_tok added 1376 times, FindOrAddToken tok updated 66 times, ForwardLink processed 946 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[1].toks tot_cost: 17.241
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 3 is 1378
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.142
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1378 states, 798 states are cut-off, arc cost calculation 17187 times, FindOrAddToken new_tok added 1488 times, FindOrAddToken tok updated 163 times, ForwardLink processed 1222 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[2].toks tot_cost: 8.05788
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 4 is 1461
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.98676
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1461 states, 0 states are cut-off, arc cost calculation 49928 times, FindOrAddToken new_tok added 1736 times, FindOrAddToken tok updated 315 times, ForwardLink processed 1726 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[3].toks tot_cost: 5.6597
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 5 is 1795
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.56305
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1795 states, 0 states are cut-off, arc cost calculation 47631 times, FindOrAddToken new_tok added 1582 times, FindOrAddToken tok updated 351 times, ForwardLink processed 1513 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[4].toks tot_cost: 6.77524
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 6 is 1513
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.69463
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1513 states, 0 states are cut-off, arc cost calculation 38741 times, FindOrAddToken new_tok added 4830 times, FindOrAddToken tok updated 1046 times, ForwardLink processed 5748 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[5].toks tot_cost: 7.79193
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 7 is 5228
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.9157
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 5228 states, 2275 states are cut-off, arc cost calculation 63388 times, FindOrAddToken new_tok added 5290 times, FindOrAddToken tok updated 1317 times, ForwardLink processed 6408 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[6].toks tot_cost: 10.0001
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 8 is 5949
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 11.0145
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:211)output.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:227)current_log_post_.NumRows(): 7current_log_post_.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 5949 states, 637 states are cut-off, arc cost calculation 96457 times, FindOrAddToken new_tok added 12638 times, FindOrAddToken tok updated 3028 times, ForwardLink processed 16074 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[7].toks tot_cost: 10.2158
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 9 is 14215
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.2357
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 14215 states, 8214 states are cut-off, arc cost calculation 100819 times, FindOrAddToken new_tok added 6934 times, FindOrAddToken tok updated 1391 times, ForwardLink processed 5387 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[8].toks tot_cost: 10.53
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 10 is 4768
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.08767
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 4768 states, 588 states are cut-off, arc cost calculation 66506 times, FindOrAddToken new_tok added 3087 times, FindOrAddToken tok updated 725 times, ForwardLink processed 3204 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[9].toks tot_cost: 7.43527
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 11 is 2880
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.32864
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 2880 states, 0 states are cut-off, arc cost calculation 50518 times, FindOrAddToken new_tok added 2708 times, FindOrAddToken tok updated 578 times, ForwardLink processed 2849 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[10].toks tot_cost: 8.44414
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 12 is 2223
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 8.85842
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 2223 states, 1442 states are cut-off, arc cost calculation 16652 times, FindOrAddToken new_tok added 807 times, FindOrAddToken tok updated 116 times, ForwardLink processed 783 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[11].toks tot_cost: 8.55
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 13 is 885
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.4481
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 885 states, 0 states are cut-off, arc cost calculation 17659 times, FindOrAddToken new_tok added 1648 times, FindOrAddToken tok updated 330 times, ForwardLink processed 1802 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[12].toks tot_cost: 9.81907
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 14 is 1795
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 11.0955
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1795 states, 0 states are cut-off, arc cost calculation 31911 times, FindOrAddToken new_tok added 1737 times, FindOrAddToken tok updated 554 times, ForwardLink processed 2013 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[13].toks tot_cost: 9.19662
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 15 is 1610
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.69262
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:211)output.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:227)current_log_post_.NumRows(): 7current_log_post_.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1610 states, 300 states are cut-off, arc cost calculation 26030 times, FindOrAddToken new_tok added 719 times, FindOrAddToken tok updated 134 times, ForwardLink processed 600 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[14].toks tot_cost: 7.05104
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 16 is 540
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.15725
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 540 states, 0 states are cut-off, arc cost calculation 10293 times, FindOrAddToken new_tok added 368 times, FindOrAddToken tok updated 84 times, ForwardLink processed 364 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[15].toks tot_cost: 8.5259
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 17 is 314
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.58981
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 314 states, 55 states are cut-off, arc cost calculation 5674 times, FindOrAddToken new_tok added 247 times, FindOrAddToken tok updated 63 times, ForwardLink processed 269 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[16].toks tot_cost: 8.67089
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 18 is 236
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.2385
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 236 states, 35 states are cut-off, arc cost calculation 4288 times, FindOrAddToken new_tok added 204 times, FindOrAddToken tok updated 29 times, ForwardLink processed 217 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[17].toks tot_cost: 9.41375
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 19 is 222
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.1674
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 222 states, 21 states are cut-off, arc cost calculation 4476 times, FindOrAddToken new_tok added 194 times, FindOrAddToken tok updated 34 times, ForwardLink processed 179 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[18].toks tot_cost: 8.31537
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 20 is 186
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff inf
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 186 states, 0 states are cut-off, arc cost calculation 4410 times, FindOrAddToken new_tok added 4094 times, FindOrAddToken tok updated 222 times, ForwardLink processed 4410 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[19].toks tot_cost: 9.17789
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 21 is 6499
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.6141
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 6499 states, 6298 states are cut-off, arc cost calculation 4363 times, FindOrAddToken new_tok added 2663 times, FindOrAddToken tok updated 1007 times, ForwardLink processed 267 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[20].toks tot_cost: 18.5242
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 22 is 339
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.78071
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:211)output.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:227)current_log_post_.NumRows(): 7current_log_post_.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 339 states, 72 states are cut-off, arc cost calculation 6588 times, FindOrAddToken new_tok added 239 times, FindOrAddToken tok updated 30 times, ForwardLink processed 132 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[21].toks tot_cost: 10.3704
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 23 is 166
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff inf
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 166 states, 0 states are cut-off, arc cost calculation 3451 times, FindOrAddToken new_tok added 3231 times, FindOrAddToken tok updated 217 times, ForwardLink processed 3451 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[22].toks tot_cost: 6.5921
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 24 is 5051
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.28295
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 5051 states, 4801 states are cut-off, arc cost calculation 6605 times, FindOrAddToken new_tok added 2394 times, FindOrAddToken tok updated 1136 times, ForwardLink processed 654 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[23].toks tot_cost: 7.01889
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 25 is 709
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.7823
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 709 states, 0 states are cut-off, arc cost calculation 13156 times, FindOrAddToken new_tok added 1043 times, FindOrAddToken tok updated 143 times, ForwardLink processed 1088 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[24].toks tot_cost: 6.18396
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:PruneActiveTokens():lattice-faster-online-decoder.cc:757)PruneActiveTokens: pruned tokens from 61887 to 2122
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:916)PruneActiveTokens processed
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 26 is 1132
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.59845
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1132 states, 0 states are cut-off, arc cost calculation 21517 times, FindOrAddToken new_tok added 1686 times, FindOrAddToken tok updated 450 times, ForwardLink processed 1947 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[25].toks tot_cost: 5.67293
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 27 is 1769
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.889
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1769 states, 0 states are cut-off, arc cost calculation 31790 times, FindOrAddToken new_tok added 3116 times, FindOrAddToken tok updated 1066 times, ForwardLink processed 3978 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[26].toks tot_cost: 6.50583
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 28 is 3360
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 11.4156
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 3360 states, 11 states are cut-off, arc cost calculation 59144 times, FindOrAddToken new_tok added 1964 times, FindOrAddToken tok updated 692 times, ForwardLink processed 2015 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[27].toks tot_cost: 5.33934
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 29 is 1615
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 8.49465
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:211)output.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:227)current_log_post_.NumRows(): 7current_log_post_.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1615 states, 296 states are cut-off, arc cost calculation 24676 times, FindOrAddToken new_tok added 870 times, FindOrAddToken tok updated 196 times, ForwardLink processed 825 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[28].toks tot_cost: 4.17543
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 30 is 759
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.36257
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 759 states, 0 states are cut-off, arc cost calculation 15023 times, FindOrAddToken new_tok added 390 times, FindOrAddToken tok updated 79 times, ForwardLink processed 319 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[29].toks tot_cost: 5.54794
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 31 is 289
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 8.86706
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 289 states, 0 states are cut-off, arc cost calculation 6351 times, FindOrAddToken new_tok added 165 times, FindOrAddToken tok updated 33 times, ForwardLink processed 153 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[30].toks tot_cost: 6.69357
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 32 is 137
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff inf
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 137 states, 0 states are cut-off, arc cost calculation 3647 times, FindOrAddToken new_tok added 3021 times, FindOrAddToken tok updated 525 times, ForwardLink processed 3647 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[31].toks tot_cost: 8.15445
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 33 is 4655
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.2149
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 4655 states, 4454 states are cut-off, arc cost calculation 3531 times, FindOrAddToken new_tok added 1768 times, FindOrAddToken tok updated 885 times, ForwardLink processed 144 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[32].toks tot_cost: 8.51642
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 34 is 151
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff inf
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 151 states, 0 states are cut-off, arc cost calculation 2783 times, FindOrAddToken new_tok added 2447 times, FindOrAddToken tok updated 283 times, ForwardLink processed 2783 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[33].toks tot_cost: 8.88293
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 35 is 3714
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.6331
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 3714 states, 3513 states are cut-off, arc cost calculation 4192 times, FindOrAddToken new_tok added 1465 times, FindOrAddToken tok updated 1104 times, ForwardLink processed 214 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[34].toks tot_cost: 10.5023
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 36 is 260
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.4697
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:211)output.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:227)current_log_post_.NumRows(): 7current_log_post_.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 260 states, 59 states are cut-off, arc cost calculation 3805 times, FindOrAddToken new_tok added 251 times, FindOrAddToken tok updated 55 times, ForwardLink processed 204 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[35].toks tot_cost: 11.102
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 37 is 251
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.5996
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 251 states, 50 states are cut-off, arc cost calculation 4331 times, FindOrAddToken new_tok added 328 times, FindOrAddToken tok updated 73 times, ForwardLink processed 313 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[36].toks tot_cost: 9.69157
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 38 is 351
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.68679
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 351 states, 112 states are cut-off, arc cost calculation 5119 times, FindOrAddToken new_tok added 272 times, FindOrAddToken tok updated 65 times, ForwardLink processed 208 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[37].toks tot_cost: 8.75175
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 39 is 236
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 8.91975
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 236 states, 0 states are cut-off, arc cost calculation 4628 times, FindOrAddToken new_tok added 187 times, FindOrAddToken tok updated 22 times, ForwardLink processed 120 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[38].toks tot_cost: 8.81699
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 40 is 173
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff inf
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 173 states, 0 states are cut-off, arc cost calculation 3540 times, FindOrAddToken new_tok added 3170 times, FindOrAddToken tok updated 246 times, ForwardLink processed 3540 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[39].toks tot_cost: 6.80971
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 41 is 5436
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 8.51849
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 5436 states, 5235 states are cut-off, arc cost calculation 4765 times, FindOrAddToken new_tok added 3289 times, FindOrAddToken tok updated 630 times, ForwardLink processed 1151 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[40].toks tot_cost: 5.39779
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 42 is 1264
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 12.1516
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1264 states, 567 states are cut-off, arc cost calculation 12620 times, FindOrAddToken new_tok added 2500 times, FindOrAddToken tok updated 420 times, ForwardLink processed 2784 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[41].toks tot_cost: 9.40937
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 43 is 2860
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 11.3592
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:211)output.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:227)current_log_post_.NumRows(): 7current_log_post_.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 2860 states, 0 states are cut-off, arc cost calculation 60393 times, FindOrAddToken new_tok added 2835 times, FindOrAddToken tok updated 909 times, ForwardLink processed 3167 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[42].toks tot_cost: 4.67048
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 44 is 2684
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 8.77994
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 2684 states, 0 states are cut-off, arc cost calculation 60115 times, FindOrAddToken new_tok added 2273 times, FindOrAddToken tok updated 816 times, ForwardLink processed 2642 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[43].toks tot_cost: 3.89058
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 45 is 1979
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 8.52874
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1979 states, 1151 states are cut-off, arc cost calculation 16864 times, FindOrAddToken new_tok added 615 times, FindOrAddToken tok updated 148 times, ForwardLink processed 505 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[44].toks tot_cost: 5.21852
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 46 is 604
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 8.67554
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 604 states, 0 states are cut-off, arc cost calculation 12763 times, FindOrAddToken new_tok added 745 times, FindOrAddToken tok updated 240 times, ForwardLink processed 761 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[45].toks tot_cost: 6.79341
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 47 is 767
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.0998
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 767 states, 0 states are cut-off, arc cost calculation 15798 times, FindOrAddToken new_tok added 1712 times, FindOrAddToken tok updated 383 times, ForwardLink processed 1936 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[46].toks tot_cost: 8.03979
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 48 is 1831
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.976
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1831 states, 86 states are cut-off, arc cost calculation 36906 times, FindOrAddToken new_tok added 723 times, FindOrAddToken tok updated 153 times, ForwardLink processed 514 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[47].toks tot_cost: 8.09945
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 49 is 468
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.85682
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 468 states, 0 states are cut-off, arc cost calculation 10761 times, FindOrAddToken new_tok added 349 times, FindOrAddToken tok updated 83 times, ForwardLink processed 306 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[48].toks tot_cost: 7.29674
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 50 is 317
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.02744
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:211)output.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:227)current_log_post_.NumRows(): 7current_log_post_.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 317 states, 0 states are cut-off, arc cost calculation 7909 times, FindOrAddToken new_tok added 659 times, FindOrAddToken tok updated 131 times, ForwardLink processed 746 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[49].toks tot_cost: 8.51883
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:PruneActiveTokens():lattice-faster-online-decoder.cc:757)PruneActiveTokens: pruned tokens from 38764 to 1686
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:916)PruneActiveTokens processed
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 51 is 712
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.9999
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 712 states, 0 states are cut-off, arc cost calculation 15203 times, FindOrAddToken new_tok added 1225 times, FindOrAddToken tok updated 338 times, ForwardLink processed 1527 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[50].toks tot_cost: 10.4508
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 52 is 1350
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.55973
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1350 states, 226 states are cut-off, arc cost calculation 21278 times, FindOrAddToken new_tok added 1148 times, FindOrAddToken tok updated 332 times, ForwardLink processed 1336 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[51].toks tot_cost: 8.2229
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 53 is 1208
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.51746
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1208 states, 0 states are cut-off, arc cost calculation 20684 times, FindOrAddToken new_tok added 1288 times, FindOrAddToken tok updated 424 times, ForwardLink processed 1514 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[52].toks tot_cost: 8.03373
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 54 is 1352
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.87085
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1352 states, 0 states are cut-off, arc cost calculation 23287 times, FindOrAddToken new_tok added 2033 times, FindOrAddToken tok updated 669 times, ForwardLink processed 2487 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[53].toks tot_cost: 8.35769
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 55 is 2173
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.5778
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 2173 states, 20 states are cut-off, arc cost calculation 35641 times, FindOrAddToken new_tok added 3647 times, FindOrAddToken tok updated 1290 times, ForwardLink processed 4798 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[54].toks tot_cost: 8.72976
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 56 is 3836
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 10.8111
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 3836 states, 351 states are cut-off, arc cost calculation 59946 times, FindOrAddToken new_tok added 2205 times, FindOrAddToken tok updated 730 times, ForwardLink processed 2393 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[55].toks tot_cost: 6.1168
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 57 is 1859
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 8.32082
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:211)output.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:227)current_log_post_.NumRows(): 7current_log_post_.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 1859 states, 359 states are cut-off, arc cost calculation 25052 times, FindOrAddToken new_tok added 842 times, FindOrAddToken tok updated 248 times, ForwardLink processed 741 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[56].toks tot_cost: 5.29538
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 58 is 674
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 8.79294
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 674 states, 0 states are cut-off, arc cost calculation 11621 times, FindOrAddToken new_tok added 477 times, FindOrAddToken tok updated 95 times, ForwardLink processed 440 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[57].toks tot_cost: 7.49092
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 59 is 422
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.0792
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 422 states, 0 states are cut-off, arc cost calculation 7275 times, FindOrAddToken new_tok added 356 times, FindOrAddToken tok updated 91 times, ForwardLink processed 354 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[58].toks tot_cost: 8.7992
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 60 is 337
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 9.15019
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 337 states, 0 states are cut-off, arc cost calculation 5297 times, FindOrAddToken new_tok added 265 times, FindOrAddToken tok updated 53 times, ForwardLink processed 242 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[59].toks tot_cost: 6.87759
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 61 is 243
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 8.45716
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 243 states, 0 states are cut-off, arc cost calculation 3970 times, FindOrAddToken new_tok added 198 times, FindOrAddToken tok updated 15 times, ForwardLink processed 149 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[60].toks tot_cost: 4.91508
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 62 is 175
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff inf
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 175 states, 0 states are cut-off, arc cost calculation 2965 times, FindOrAddToken new_tok added 2779 times, FindOrAddToken tok updated 115 times, ForwardLink processed 2965 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[61].toks tot_cost: 4.97498
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 63 is 4763
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.83683
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 4763 states, 4562 states are cut-off, arc cost calculation 3419 times, FindOrAddToken new_tok added 2218 times, FindOrAddToken tok updated 500 times, ForwardLink processed 231 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[62].toks tot_cost: 23.3375
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 64 is 240
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 6.90171
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:211)output.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:227)current_log_post_.NumRows(): 7current_log_post_.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 240 states, 39 states are cut-off, arc cost calculation 2995 times, FindOrAddToken new_tok added 199 times, FindOrAddToken tok updated 27 times, ForwardLink processed 171 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[63].toks tot_cost: 7.2354
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 65 is 226
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.39203
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 226 states, 25 states are cut-off, arc cost calculation 3524 times, FindOrAddToken new_tok added 235 times, FindOrAddToken tok updated 10 times, ForwardLink processed 183 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[64].toks tot_cost: 7.67785
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 66 is 252
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.66663
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 252 states, 36 states are cut-off, arc cost calculation 3765 times, FindOrAddToken new_tok added 244 times, FindOrAddToken tok updated 12 times, ForwardLink processed 173 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[65].toks tot_cost: 8.35529
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 67 is 228
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.89355
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 228 states, 0 states are cut-off, arc cost calculation 3923 times, FindOrAddToken new_tok added 229 times, FindOrAddToken tok updated 13 times, ForwardLink processed 178 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[66].toks tot_cost: 5.83839
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 68 is 230
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.90738
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 230 states, 0 states are cut-off, arc cost calculation 3930 times, FindOrAddToken new_tok added 229 times, FindOrAddToken tok updated 13 times, ForwardLink processed 177 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[67].toks tot_cost: 5.74193
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 69 is 227
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.83307
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 227 states, 0 states are cut-off, arc cost calculation 3881 times, FindOrAddToken new_tok added 225 times, FindOrAddToken tok updated 11 times, ForwardLink processed 172 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[68].toks tot_cost: 5.68106
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 70 is 222
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.71206
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 222 states, 0 states are cut-off, arc cost calculation 3816 times, FindOrAddToken new_tok added 220 times, FindOrAddToken tok updated 6 times, ForwardLink processed 165 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[69].toks tot_cost: 5.63031
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 71 is 216
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.57433
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:211)output.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:227)current_log_post_.NumRows(): 7current_log_post_.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 216 states, 0 states are cut-off, arc cost calculation 3670 times, FindOrAddToken new_tok added 212 times, FindOrAddToken tok updated 6 times, ForwardLink processed 160 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[70].toks tot_cost: 5.59721
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 72 is 202
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.36106
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 202 states, 0 states are cut-off, arc cost calculation 3420 times, FindOrAddToken new_tok added 193 times, FindOrAddToken tok updated 2 times, ForwardLink processed 142 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[71].toks tot_cost: 5.56044
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 73 is 183
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff inf
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 183 states, 0 states are cut-off, arc cost calculation 3074 times, FindOrAddToken new_tok added 2848 times, FindOrAddToken tok updated 211 times, ForwardLink processed 3074 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[72].toks tot_cost: 6.05742
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 74 is 4970
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.37162
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 4970 states, 4769 states are cut-off, arc cost calculation 3518 times, FindOrAddToken new_tok added 2309 times, FindOrAddToken tok updated 627 times, ForwardLink processed 150 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[73].toks tot_cost: 7.23138
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 75 is 191
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff inf
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 191 states, 0 states are cut-off, arc cost calculation 3230 times, FindOrAddToken new_tok added 3000 times, FindOrAddToken tok updated 211 times, ForwardLink processed 3230 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[74].toks tot_cost: 6.65168
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:PruneActiveTokens():lattice-faster-online-decoder.cc:757)PruneActiveTokens: pruned tokens from 32607 to 6021
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:916)PruneActiveTokens processed
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 76 is 5142
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.48591
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 5142 states, 4941 states are cut-off, arc cost calculation 3518 times, FindOrAddToken new_tok added 2341 times, FindOrAddToken tok updated 834 times, ForwardLink processed 160 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[75].toks tot_cost: 6.18988
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 77 is 223
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.46007
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 223 states, 22 states are cut-off, arc cost calculation 3525 times, FindOrAddToken new_tok added 229 times, FindOrAddToken tok updated 5 times, ForwardLink processed 170 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[76].toks tot_cost: 6.07388
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceDecoding():lattice-faster-online-decoder.cc:895)LatticeFasterOnlineDecoder::AdvanceDecoding
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 78 is 241
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.42513
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:211)output.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:AdvanceChunk():decodable-online-looped.cc:227)current_log_post_.NumRows(): 7current_log_post_.NumCols(): 9470
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 241 states, 40 states are cut-off, arc cost calculation 3518 times, FindOrAddToken new_tok added 247 times, FindOrAddToken tok updated 8 times, ForwardLink processed 179 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[77].toks tot_cost: 6.5511
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 79 is 254
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.4154
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 254 states, 53 states are cut-off, arc cost calculation 3518 times, FindOrAddToken new_tok added 252 times, FindOrAddToken tok updated 10 times, ForwardLink processed 178 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[78].toks tot_cost: 7.35614
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 80 is 246
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.41539
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 246 states, 45 states are cut-off, arc cost calculation 3417 times, FindOrAddToken new_tok added 243 times, FindOrAddToken tok updated 14 times, ForwardLink processed 178 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[79].toks tot_cost: 7.96129
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 81 is 240
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.56737
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 240 states, 25 states are cut-off, arc cost calculation 3669 times, FindOrAddToken new_tok added 234 times, FindOrAddToken tok updated 6 times, ForwardLink processed 165 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[80].toks tot_cost: 8.01159
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 82 is 219
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.66855
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 219 states, 0 states are cut-off, arc cost calculation 3769 times, FindOrAddToken new_tok added 219 times, FindOrAddToken tok updated 8 times, ForwardLink processed 167 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[81].toks tot_cost: 5.67971
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 83 is 219
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.65433
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 219 states, 0 states are cut-off, arc cost calculation 3769 times, FindOrAddToken new_tok added 219 times, FindOrAddToken tok updated 6 times, ForwardLink processed 165 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[82].toks tot_cost: 5.66193
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetCutoff():lattice-faster-online-decoder.cc:981)Number of tokens active on frame 84 is 215
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1034)GetCutoff processed : cur_cutoff 7.53665
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1132)for 215 states, 0 states are cut-off, arc cost calculation 3669 times, FindOrAddToken new_tok added 208 times, FindOrAddToken tok updated 6 times, ForwardLink processed 157 times in total
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:ProcessEmitting():lattice-faster-online-decoder.cc:1142)active_toks_[83].toks tot_cost: 5.60442
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 1 times at frame 0
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 1
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 2
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 3
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 6 times at frame 4
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 7 times at frame 5
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 9 times at frame 6
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 8 times at frame 7
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 8 times at frame 8
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 9
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 7 times at frame 10
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 10 times at frame 11
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 9 times at frame 12
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 6 times at frame 13
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 14
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 15
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 6 times at frame 16
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 4 times at frame 17
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 2 times at frame 18
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 19
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 20
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 2 times at frame 21
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 1 times at frame 22
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 6 times at frame 23
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 8 times at frame 24
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 8 times at frame 25
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 9 times at frame 26
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 7 times at frame 27
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 28
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 29
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 30
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 31
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 32
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 33
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 34
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 4 times at frame 35
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 4 times at frame 36
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 37
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 2 times at frame 38
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 2 times at frame 39
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 8 times at frame 40
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 7 times at frame 41
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 7 times at frame 42
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 9 times at frame 43
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 16 times at frame 44
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 20 times at frame 45
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 17 times at frame 46
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 10 times at frame 47
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 15 times at frame 48
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 13 times at frame 49
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 9 times at frame 50
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 51
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 8 times at frame 52
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 8 times at frame 53
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 7 times at frame 54
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 55
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 56
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 57
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 58
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 59
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 3 times at frame 60
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 8 times at frame 61
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 8 times at frame 62
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 63
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 64
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 65
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 66
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 67
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 68
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 69
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 70
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 71
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 72
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 73
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 74
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 75
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 76
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 77
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 78
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 79
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 80
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 81
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 82
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 5 times at frame 83
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:286)TopSortTokens processed, ofst->AddState() is copied to tok_map 6 times at frame 84
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:292)init:251 buckets:541 load:0.918669 max:1
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:GetRawLattice2():lattice-faster-online-decoder.cc:357)ofst->AddArc process 633 times
+LOG (online2-wav-nnet3-latgen-faster-force[5.2.107~15-e8928]:main():online2-wav-nnet3-latgen-faster-force.cc:336) num_post : 15
+16.09923,-30.9669,2_12510_12509_12509_12509_33638_33637_31814_30492_30491_6720
+0	3	0.982088	WOULD	197174
+13.32392,-15.91918,2_12510_12509_36600_17384_12566_33638
+0	1	0.01791206	WHAT	194249
+4.983314,-13.25153,31814_30492_30491_6720
+1	2	0.01791207	WOULD	197174
+7.196545,-15.44763,6719_45504_45503_45503_45503_56758_56757
+2	4	0.01791206	YOU	198772
+7.196545,-15.44763,6719_45504_45503_45503_45503_56758_56757
+3	4	0.982088	YOU	198772
+20.13723,-41.41236,56757_18576_18575_18575_2_43656_43655_43655_22602_22601
+4	5	1	LIKE	102087
+12.41878,-30.63778,22601_19064_19063_19063_35546_35545_35545_59168_59167_59167_59167_2
+5	6	1	CHICKEN	30947
+12.90162,-22.36073,51986_51985_51985_44934_44933_3512_3511_3511_49112_49111_49111
+6	12	0.4251907	ARE	7593
+14.17213,-22.36073,51986_51985_51985_44934_44933_3512_3511_3511_49112_49111_49111
+6	10	0.4251907	OUR	127341
+11.69676,-15.28273,28752_28751_28751_28751_28751_3790_3789
+6	8	0.1461729	OR	126132
+18.72682,-22.36073,51986_51985_51985_44934_44933_3512_3511_3511_49112_49111_49111
+6	7	0.003445635	R	143196
+24.09227,-129.938,49111_49111_8152_8151_8151_8151_8151_8151_8151_8151_2_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1
+7	13	0.003445629	BEEF	14465
+21.49147,-130.8985,3789_49112_49111_49111_49111_49111_8152_8151_8151_8151_8151_8151_8151_8151_2_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1
+8	9	0.1461723	BEEF	14465
+23.95165,-129.938,49111_49111_8152_8151_8151_8151_8151_8151_8151_8151_2_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1
+10	11	0.4251899	BEEF	14465
+25.10204,-129.938,49111_49111_8152_8151_8151_8151_8151_8151_8151_8151_2_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1
+12	13	0.4251899	BEEF	14465
+WOULD	0.982088
+YOU	0.982088
+LIKE	1
+CHICKEN	1
+OR	0.1461729
+BEEF	0.4251899
+0.7559231
